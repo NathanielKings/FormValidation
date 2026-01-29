@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
+}
+.form {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.name-field,
+.email-field,
+.pwrd-field,
+.confirm-pwrd-field {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: solid 2px #e2e2e2;
+  background-color: #eeeeee;
+}
+
+input:focus {
+  border: solid 2px #0004ff;
+  outline: none;
+  overflow: hidden;
+}
+
+button {
+  background-color: #0004ff4d;
+  width: 100%;
+  padding: 0.8rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: not-allowed;
+  margin-top: 1rem;
+}
+
+/* Error & success states */
+.field.error input {
+  border-color: #ff3b3b;
+}
+
+.field.success input {
+  border-color: #2ecc71;
+}
+
+.error {
+  font-size: 0.7rem;
+  color: #ff3b3b;
+  min-height: 0.8rem;
+}
+
+#status-message {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+#status-message.success {
+  color: #2ecc71;
+}
+
+#status-message.error {
+  color: #ff3b3b;
+}
+
+button.enabled {
+  background-color: #0004ff;
+  cursor: pointer;
+}
