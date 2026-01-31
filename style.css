@@ -15,8 +15,10 @@
   align-items: center;
   background-color: #e2e2e2;
 }
+
 .form {
-  width: 22%;
+  width: 90%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
